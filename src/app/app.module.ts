@@ -6,19 +6,23 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BacklogComponent } from './backlog/backlog.component'
+import { BacklogComponent } from './backlog/backlog.component';
+import { WorkEditComponent } from './backlog/work-edit/work-edit.component'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidenavComponent,
-    BacklogComponent
+    BacklogComponent,
+    WorkEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

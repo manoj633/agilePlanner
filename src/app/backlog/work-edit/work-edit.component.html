@@ -1,0 +1,16 @@
+<div class="backdrop"></div>
+<div class="alert-box">
+  <div><span>Create Issue</span></div>
+  <hr />
+  <div class="form-group">
+    <form #workForm="ngForm" (ngSubmit)="onCreateWork()">
+      <label for="project"></label>
+      <select name="project" id="project" ngModel class="form-control">
+        <option value="1">Amazon</option>
+        <option value="2">FlipKart</option>
+        <option value="3">NetFlix</option>
+        <option value="4">Google</option>
+      </select>
+    </form>
+  </div>
+</div>
