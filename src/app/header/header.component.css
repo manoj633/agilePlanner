@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #292d9e;
+    font-family: "Roboto", sans-serif;
+}
+
+li, a, button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    padding: 10px 25px;
+}
+
+.logo-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    width: 40px;
+}
+
+.logo-container p {
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+button img {
+    width: 30px;
+    transition: all 0.3s ease 0s;
+}
+
+button img:hover {
+    width: 35px;
+    transition: all 0.3s ease 0s;
+}
