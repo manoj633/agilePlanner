@@ -19,7 +19,8 @@ export class WorkEditComponent implements OnInit {
     priority: "",
     story_point: "",
     created_by: "",
-    assignee: ""
+    assignee: "",
+    created_on: ""
   }
   constructor() { }
 
@@ -27,7 +28,10 @@ export class WorkEditComponent implements OnInit {
   }
 
   onCreateWork() {
+  }
 
+  onCancel() {
+    //route back to backlog
   }
 
 }

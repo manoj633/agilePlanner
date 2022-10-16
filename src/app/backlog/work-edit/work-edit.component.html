@@ -1,16 +1,98 @@
 <div class="backdrop"></div>
 <div class="alert-box">
-  <div><span>Create Issue</span></div>
-  <hr />
-  <div class="form-group">
+  <div class="heading-container"><span>Create Issue</span></div>
+  <div class="form-container">
     <form #workForm="ngForm" (ngSubmit)="onCreateWork()">
-      <label for="project"></label>
-      <select name="project" id="project" ngModel class="form-control">
-        <option value="1">Amazon</option>
-        <option value="2">FlipKart</option>
-        <option value="3">NetFlix</option>
-        <option value="4">Google</option>
-      </select>
+      <div class="project-selection">
+        <span class="note"
+          >All fields marked with asterisk(*) are required</span
+        >
+        <div class="form-group">
+          <label for="project">Project<span class="asterisk">*</span></label>
+          <select name="project" id="project" ngModel class="form-control">
+            <option value="1">Amazon</option>
+            <option value="2">FlipKart</option>
+            <option value="3">NetFlix</option>
+            <option value="4">Google</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="issue_type"
+            >Issue Type<span class="asterisk">*</span></label
+          >
+          <select
+            name="issue_type"
+            id="issue_type"
+            ngModel
+            class="form-control"
+          >
+            <option value="1">Story</option>
+            <option value="2">Task</option>
+            <option value="3">Feature</option>
+            <option value="4">Issue</option>
+            <option value="1">Decision</option>
+            <option value="2">Design</option>
+            <option value="3">Improvement</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+      <div class="summary-container">
+        <div class="form-group">
+          <label for="summary">Summary<span class="asterisk">*</span></label>
+          <input type="text" name="summary" id="summary" />
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea
+            name="description"
+            id="description"
+            cols="100"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="priority">priority<span class="asterisk">*</span></label>
+          <select
+            name="priority"
+            id="priority"
+            ngModel
+            class="form-control"
+            class="decorated"
+          >
+            <option value="1"><img src="" alt="" /> Highest</option>
+            <option value="2"><img src="" alt="" /> High</option>
+            <option value="3"><img src="" alt="" /> Medium</option>
+            <option value="4"><img src="" alt="" /> Low</option>
+            <option value="1"><img src="" alt="" /> Lowest</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="sprint">Sprint</label>
+          <input type="text" name="sprint" id="sprint" />
+        </div>
+        <div class="form-group">
+          <label for="story_point">Story points</label>
+          <input type="text" name="story_point" id="story_point" />
+        </div>
+        <div class="form-group">
+          <label for="created_by">Created By</label>
+          <input type="text" name="created_by" id="created_by" />
+        </div>
+        <div class="form-group">
+          <label for="assignee">Assignee</label>
+          <select
+            name="assignee"
+            id="assignee"
+            ngModel
+            class="form-control"
+          ></select>
+        </div>
+      </div>
     </form>
+  </div>
+  <div class="button-container">
+    <button class="create" [disabled]="!workForm.valid">Create</button>&nbsp;
+    <button class="cancel" (click)="onCancel()">Cancel</button>
   </div>
 </div>
