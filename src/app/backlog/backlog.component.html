@@ -1,1 +1,58 @@
-<p>backlog works!</p>
+<div class="container">
+  <div class="heading-container">
+    <div class="heading">
+      <span class="board">Application UI Devboard</span>
+      <span class="backlog">Backlog</span>
+    </div>
+    <div class="selectors">
+      <select class="selector" name="links_heirarchy" id="links_heirarchy">
+        <option value="1" selected>Links Heirachy</option>
+        <option value="2">Conflusion</option>
+      </select>
+      <select class="selector" name="devboard" id="devboard">
+        <option value="1" selected>OrderUI devBoard</option>
+        <option value="2">OrderAPI devBoard</option>
+      </select>
+    </div>
+  </div>
+  <div class="query-container">
+    <div class="form-group">
+      <input type="text" />
+      <!-- ../../assets/backlog/search.png -->
+      <button class="search">
+        <img class="search-image" src="../../assets/backlog/search.png" />
+      </button>
+    </div>
+    <div class="filters">
+      <span>QUICK FILTERS:</span>
+      <button class="filter-button">Only my issues</button>
+      <button class="filter-button">Recently updated</button>
+    </div>
+  </div>
+  <div class="content-container">
+    <div class="main-content">
+      <div class="content">
+        <div class="content-heading">
+          <div class="sprint-details">
+            <button class="arrow">></button>
+            <span class="sprint-name">AD31</span>
+            <span class="issue-count">4 issues - </span>
+            <span class="sprint-status">Active</span>
+          </div>
+          <div class="story-points">
+            <span class="todo">0</span>
+            <span class="inprogress">0</span>
+            <span class="done">25</span>
+            <button class="export-btn">Export</button>
+            <button class="more-btn">...</button>
+          </div>
+        </div>
+        <div class="jira-collapsed">
+          <img src="" alt="" />
+          <button>a</button>
+          <span>b</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
