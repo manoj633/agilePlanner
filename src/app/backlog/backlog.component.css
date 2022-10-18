@@ -2,6 +2,11 @@
     background-color: white;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .container {
     margin-left: 5rem;
     width: 94.8%;
@@ -10,7 +15,9 @@
     padding: 16px 0px;
 }
 
-.heading-container, .query-container, .content-container {
+.heading-container,
+.query-container,
+.content-container {
     display: flex;
     flex-direction: row;
     padding: 10px 20px;
@@ -37,7 +44,8 @@
     font-weight: 400;
 }
 
-.selectors select, input {
+.selectors select,
+input {
     margin-right: 20px;
     background-color: rgba(238, 238, 238, 0.8);
     width: 20vw;
@@ -67,11 +75,11 @@ input {
     display: inline;
 }
 
-.search:hover .search-image{
+.search:hover .search-image {
     background-color: rgba(156, 156, 156, 0.5);
 }
 
-.search:hover{
+.search:hover {
     background-color: rgba(156, 156, 156, 0.5);
 }
 
@@ -122,18 +130,20 @@ input {
     margin: 10px;
     font-size: 1.1rem;
     font-weight: bold;
-    color: black
+    color: black;
 }
 
 .sprint-status {
-   padding: 5px; 
-   font-weight: bold;
-   background-color: green;
-   color: white;
-   text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    text-align: center;
 }
 
-.arrow, .export-btn, .more-btn {
+.arrow,
+.export-btn,
+.more-btn {
     border: none;
     background-color: rgba(238, 238, 238, 0.8);
     padding: 4px;
@@ -161,15 +171,17 @@ input {
     font-weight: bold;
 }
 
-.todo, .inprogress, .done {
+.todo,
+.inprogress,
+.done {
     padding: 5px 12px;
     margin: 3px;
     border-radius: 12px;
 }
+
 .todo {
     background-color: rgb(30, 0, 72);
 }
-
 
 .inprogress {
     background-color: rgb(0, 85, 197);
@@ -179,3 +191,66 @@ input {
     background-color: rgb(0, 93, 9);
 }
 
+.jira-collapsed {
+    height: 2rem;
+}
+
+.issue,
+.jira-text,
+.jira-user-details {
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+
+.jira-icons {
+    /* background-color: yellow; */
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10rem;
+}
+
+.task-icon,
+.priority-icon,
+.user-logo {
+    margin: 3px;
+    margin-left: 5px;
+    width: 1.5rem;
+    display: inline;
+}
+
+.priority-icon {
+    margin-right: 8px;
+}
+
+.task-number {
+    font-weight: 600;
+}
+
+.jira-text {
+    width: 65rem;
+}
+
+.jira-user-details {
+    width: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jira-collapsed,
+.issue,
+.jira-text,
+.jira-user-details,
+.jira-icons,
+.task-icon,
+.priority-icon,
+.user-logo,
+.task-number,
+.jira-text,
+.jira-user-details,
+.jira-summary,
+.task-ref {
+    background-color: rgb(235, 234, 234);
+}

@@ -9,7 +9,7 @@
 .navbar {
     width: 5rem;
     height: 100vh;
-    position: fixed;  
+    position: fixed;
     transition: width 80ms ease;
 }
 
@@ -33,13 +33,13 @@
     text-decoration: none;
 }
 
-.nav-link:hover  .nav-img{
+.nav-link:hover .nav-img {
     width: 5rem;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
-.nav-link:hover  .link-text{
+.nav-link:hover .link-text {
     font-size: 25px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
