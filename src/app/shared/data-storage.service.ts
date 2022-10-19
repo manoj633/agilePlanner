@@ -8,4 +8,20 @@ export class DataStorageService {
 
   constructor(private http: HttpClient) {
   }
+
+  fetchTasks() {
+
+  }
+
+  storeTasks() {
+
+  }
+
+  fetchSprints() {
+
+  }
+
+  storeSprints() {
+
+  }
 }
