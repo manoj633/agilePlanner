@@ -16,7 +16,7 @@ export class DataStorageService {
 
   storeTasks() {
     const tasks = this.taskService.getTasks();
-    this.http.put(' link', tasks).subscribe();
+    this.http.put('link', tasks).subscribe();
   }
 
   fetchSprints() {
