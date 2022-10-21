@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BacklogComponent } from './backlog/backlog.component';
 import { WorkEditComponent } from './backlog/work-edit/work-edit.component'
 import { FormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     SidenavComponent,
     BacklogComponent,
-    WorkEditComponent
+    WorkEditComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
