@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { SprintService } from './sprint.service';
 import { TaskService } from './task.service';
 
 @Injectable({
@@ -7,7 +8,7 @@ import { TaskService } from './task.service';
 })
 export class DataStorageService {
 
-  constructor(private http: HttpClient, private taskService: TaskService) {
+  constructor(private http: HttpClient, private taskService: TaskService, private sprintService: SprintService) {
   }
 
   fetchTasks() {
@@ -24,6 +25,7 @@ export class DataStorageService {
   }
 
   storeSprints() {
-
+    const sprints = this.sprintService.getSprints();
+    this.http.put('link', sprints).subscribe();
   }
 }
