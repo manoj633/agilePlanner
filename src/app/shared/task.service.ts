@@ -24,8 +24,9 @@ export class TaskService {
     return this.tasks.slice()[id];
   }
 
-  addTask(task: Task) {
+  setTask(task: Task) {
     this.tasks.push(task);
+    this.tasksChanged.next(this.tasks.slice());
   }
 
   updateTask(index: number, newTask: Task) {
